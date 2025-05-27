@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Javascript</title>
+
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 id="titulo">Grande tabela de clientes</h1>
+    <div class="botoes">
+        <div onclick="themeBlack()" class="botaoTheme" style="background-color: #1f2128;"></div>
+        <div onclick="themeGreen()" class="botaoTheme" style="background-color: #1a3e23;"></div>
+        <div onclick="themeGrey()" class="botaoTheme" style="background-color: #565958;"></div>
+    </div>
+    <br/>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" size="50" placeholder="Digite seu nome" /><br/>
+        <label for="curso">Curso</label>
+        <input type="text" id="curso" name="curso" size="50" placeholder="Digite seu curso" /><br/>
+        <label for="universidade">Universidade</label>
+        <input type="text" id="universidade" name="universidade"  size="50" placeholder="Digite sua universidade" />
+        <br/>
+        <br/>
+        <button onclick="salvar()" >Salvar</button>
+        <br/>
+    </form>
+
+    <table id="customers">
+        <tr>
+            <th>Aluno</th>
+            <th>Curso</th>
+            <th>Universidade</th>
+        </tr>
+        <tr>
+            <td>Professor</td>
+            <td>Ciência da Computação</td>
+            <td>UPF</td>
+        </tr>
+    </table>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
